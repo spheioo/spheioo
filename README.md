@@ -2,6 +2,9 @@
 
 <!--
 **spheioo/spheioo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+1st page: index.html 
+2nd page: achievements.html
+3rd page: wishes.html
 
 Here are some ideas to get you started:
 
