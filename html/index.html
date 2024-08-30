@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--My CSS-->
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <!--My Javascript-->
+    <script src="../js/index.js" defer></script>
+    <title>Home</title>
+</head>
+
+<!--Attribution of images-->
+<!--
+https://www.facebook.com/singaporepolytechnic
+https://www.youtube.com/@singaporepolytechnic
+https://www.instagram.com/singaporepoly/
+https://www.sp.edu.sg/
+https://www.roots.gov.sg/Collection-Landing/listing/1192511
+
+-->
+
+
+<body>
+<!--Navigation Bar-->
+  <nav class="navbar navbar-expand-lg sticky-top bg-white">
+    <div>
+      <a class="navbar-brand" href="#">
+        <img class="img-fluid" src="../images/sp70-logo-250px.jpg" alt="SP-70 Logo">
+      </a>
+    </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="achievements.html">Achievements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="wishes.html">Well Wishes</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+   
+<!--Carousel 1-->
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">   
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../images/pg1carousel/sp-2024-trial.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center">
+                <h2 class="bg-dark bg-opacity-50 py-2 px-4">Home</h2>
+                <p class="bg-dark bg-opacity-50 py-2 px-4">Scroll down to read more about our school as we turn 70 this year.
+                </p>                
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="../images/pg1carousel/sp70-banner.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center">
+                <h2 class="bg-dark bg-opacity-50 py-2 px-4">Achievements</h2>
+                <p class="bg-dark bg-opacity-50 py-2 px-4">Click to read more about our school's pride.
+                    </p>
+                <a href="../html/achievements.html" class="btn btn-outline-light px-4 py-2 rounded-0">Learn More</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="../images/pg1carousel/acer-w-balloon.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center">
+                <h2 class="bg-dark bg-opacity-50 py-2 px-4">Well Wishes</h2>
+                <p class="bg-dark bg-opacity-50 py-2 px-4">We'd love to hear from you.
+                   </p>
+                <a href="../html/wishes.html" class="btn btn-outline-light px-4 py-2 rounded-0">Learn More</a>
+            </div>
+        </div>
+
+        
+
+    </div>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+  </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+
+
+</div>
+
+
+
+
+
+<!--SP70 Commemorative Events-->
+<div class="container mt-5 ">
+  <div class="container">
+    <h1 class="text-center text-danger mb-3">SP70 Commemorative Events</h1>
+  </div>
+
+  <!--countdown clock-->
+  <div id="countdown-wrapper" class="container mt-4 text-danger">
+    <div class="row justify-content-center"> <!--creates a row -->
+      <div class="col-auto"> <!--makes col only as wide as content-->
+        <p class="fst-italic fs-4 mb-0">Celebrate with us in</p>
+      </div>
+      <div class="col-auto">
+        <div id="countdown" class="fs-3 fw-bolder">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><span id="days">00</span> Days</li>
+            <li class="list-inline-item"><span id="hrs">00</span> Hours</li>
+            <li class="list-inline-item"><span id="minutes">00</span> Minutes</li>
+            <li class="list-inline-item"><span id="seconds">00</span> Seconds</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--cards-->
+  <div class="row mt-4">
+
+    <!--First Card-->
+    <div class="col-md-4 mb-3">
+      <div class="card" >
+        <div class="overflow-hidden"> <!--overflow hidden prevents zoomed image from overflowing its container-->
+          <img src="../images/sp-grad-bear.jpg" class="card-img-top img-zoom" alt="..."> <!--img-zoom is a custom class that links to css effect-->
+        </div>
+       
+        <div class="card-body">
+          <p class="fs-5 fw-bolder text-danger">
+            8 March 2024 <br>
+            <small class="text-body-secondary">SP 70th Anniversary Music Festival</small>
+          </p>
+          
+          <div class="card-text"> 
+                     
+                <small class="content text-body-secondary">
+                  Despite the rain and drizzle, the enthusiasm of attendees
+                  at SP's 70th Anniversary music festival remained high. <br>
+                  Thousands danced to the performances
+                  
+                  <span class="read-more-content hidden">
+                    of local artists like Evan Low, 
+                    Rangga Jones, and Marian Carmel.
+                    The festival highlighted the importance of youth mental wellness, emphasizing
+                    the positive connection between music and mental well-being.<br>
+                  </span>              
+                </small> 
+                <button class="btn btn-outline-primary read-more-btn" aria-label="Expand text">
+                  <i class=" bi bi-plus fs-4"></i>
+                </button>            
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!--Second Card-->
+    <div class="col-md-4 mb-3" >
+      <div class="card" >
+        <div class="overflow-hidden">
+          <img src="../images/sp-charity-golf-gala-dinner-president-challenge.jpg" class="card-img-top img-zoom" alt="...">
+        </div>
+
+        <div class="card-body">
+          <p class="fs-5 fw-bolder text-danger">
+            12 July 2024<br>
+            <small class="text-body-secondary">SP70 Charity Golf and Gala Dinner</small>
+          </p>
+          <div class="card-text">
+            
+              <small class="content text-body-secondary">
+                  Held on 12 July 2024, the events were attended by nearly 1,000 staff, students,
+                  industry partners, alumni, donors, friends, and some beneficiaries of the President's 
+              
+                <span class="read-more-content hidden">               
+                  Challenge. <br><br>
+                  Over $2 million in endowed donations were raised for the Singapore Polytechnic
+                  Graduates' Guild (SPGG) Education Fund, providing more than 100 annual bursaries
+                  of $2,500 each for students in need. <br><br>
+                  Additionally, a symbolic $100,000 cheque was presented to President Tharman
+                  Shanmugaratnam for the President's Challenge to fund social causes.<br>
+                </span>   
+              </small>
+              <button class="btn btn-outline-primary read-more-btn" aria-label="Expand text">
+                <i class=" bi bi-plus fs-4"></i>
+              </button>                  
+   
+                        
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!--Third Card-->
+    <div class="col-md-4 mb-3" >
+      <div class="card">
+        <div class="overflow-hidden">
+          <img src="../images/poly-50-1.jpg" class="card-img-top img-zoom" alt="...">
+        </div>
+      
+        <div class="card-body">
+          <p class="fs-5 fw-bolder text-danger">
+            31 July 2024<br>
+            <small class="text-body-secondary">Poly50 x SP@70 Campus Relay Run</small>
+          </p>
+          <div class="card-text">
+            
+            <small class="content text-body-secondary">
+              The annual Poly50 Campus Relay, organized by the Department of Student Development,
+              began in the 1970s at the Prince Edward Road Campus. Back then,
+            
+              <span class="read-more-content hidden">               
+                 students would run along the classroom corridors and on muddy tracks around the campus.
+                When the campus moved to Ayer Rajah, the relay took place around the workshops.<br><br>
+                Upon relocating to the Dover Campus in 1980, participants ran 50 laps along a 
+                600-meter route bordered by workshops and the main administration building.<br><br>
+                Only once in 1984 was the event shortened to 30 laps, to mark SP's 30th Anniversary.<br><br>
+                In 2012, the route was changed to encompass the Eleven Square area. Since then, the relay routes
+                have been periodically updated to reflect the ongoing changes at SP.<br><br>
+                The objectives of Poly50 are to foster social cohesion and interaction among SP students, staff,
+                and alumni, while promoting fitness and the importance of regular exercise for a healthy
+                lifestyle.
+              </span>   
+            </small>
+            <button class="btn btn-outline-primary read-more-btn" aria-label="Expand text">
+              <i class=" bi bi-plus fs-4"></i>
+            </button>                  
+ 
+                          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Our School Crest-->
+<div class="container mt-5">
+  <div class="container">
+    <h1 class="text-center text-danger mb-3">Our School Crest</h1>
+  </div>
+  <div class="container mt-2">
+    <img src="../images/sch-crest-png.png" class="img-fluid mx-auto d-block w-50" alt="sp sch crest with descriptions">
+  </div>
+</div>
+
+<div class="container mt-5">  
+  <div class="row">
+      <div class="col-md-8 offset-md-2">
+          <div class="p-4 bg-light border-start border-3">
+              <p class="h5">Berkhidmat Dengan Keahlian (<em>a Malay phrase</em>) means "To serve with mastery" </p>
+              
+          </div>
+      </div>
+  </div>
+</div>
+
+<!--Our History (Timeline of SP's History)-->
+<div class="table-responsive-lg"> <!--table is scrollable on screens smaller than large screens-->
+  <table class="table table-borderless">
+    <thead>
+      <h1 class="text-center text-danger mt-5 mb-3">Our History</h1>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="col-sm-4">
+          <div class="position-relative image-container">
+            <img src="../images/pg1_timeline/adelphi-hotel-coleman-street-1960s.webp" class="d-block w-100 img-fluid abc" alt="...">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary position-absolute bottom-0 start-50 translate-middle-x mb-3 timeline-button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#dynamicModal"                    
+                    data-content-id="1950-1959">
+              1950s
+            </button>
+          </div>          
+        </td>
+        <td class="col-sm-4">       
+          <div class="position-relative image-container">            
+            <img src="../images/pg1_timeline/singapore-polytecnic-1970_2.jpg" class="d-block w-100 img-fluid abc" alt="...">
+                       
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary position-absolute bottom-0 start-50 translate-middle-x mb-3 timeline-button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#dynamicModal"
+                    data-content-id="1960-1969">
+              1960s
+            </button>
+          </div>   
+        </td>
+        <td class="col-sm-4">
+          <div class="position-relative image-container">
+            <img src="../images/pg1_timeline/Singapore-Polytechnic-ancient.jpg" class="d-block w-100 img-fluid abc" alt="...">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary position-absolute bottom-0 start-50 translate-middle-x mb-3 timeline-button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#dynamicModal"
+                    data-content-id="1970-1989">
+              1970s & 1980s
+            </button>
+          </div>          
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="position-relative image-container">
+            <img src="../images/pg1_timeline/singaporepolytechnic-old-MAE.JPG" class="d-block w-100 img-fluid abc" alt="...">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary position-absolute bottom-0 start-50 translate-middle-x mb-3 timeline-button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#dynamicModal"
+                    data-content-id="1990-1999">
+              1990s
+            </button>
+          </div>  
+        </td>
+        <td>
+          <div class="position-relative image-container">
+            <img src="../images/pg1_timeline/singapore-polytechnic-2010s_2.png" class="d-block w-100 img-fluid abc" alt="...">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary position-absolute bottom-0 start-50 translate-middle-x mb-3 timeline-button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#dynamicModal"
+                    data-content-id="2000-2009">
+              2000s
+            </button>
+          </div>  
+        </td>
+        <td>
+          <div class="position-relative image-container">
+            <img src="../images/pg1_timeline/sports-complex.jpg" class="d-block w-100 img-fluid abc" alt="...">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary position-absolute bottom-0 start-50 translate-middle-x mb-3 timeline-button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#dynamicModal"
+                    data-content-id="2010-Present">
+              2010s-Present
+            </button>
+          </div>  
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Hidden divs containing modal content -->
+<div id="1950-1959" class="hidden">
+  <h4>1951</h4>
+  <p>Local businessmen met at Adelphi Hotel's roof garden to discuss idea of a polytechnic</p>
+  <h4>1952</h4>
+  <p>Legislative assemblyman, Mr Thio Chan Bee, submitted proposal to Governor</p>
+  <h4>1954</h4>
+  <p>Dobby Committee's recommendation accepted</p>
+  <img src="../images/pg1_timeline/our-story/1954_Singapore_Polytechnic_Report.jpg" alt="..." class="d-block w-50 img-fluid">
+  <p>
+    Mr A W Gibson, Principal of the Dudley and Staffordshire Technical College in England,
+    was invited and commissioned to work on the details on building the polytechnic.<br>
+
+    On 27 October 1954, the Legislative Council passed the Singapore Ordinance, 
+    which led to the establishment of Singapore's first polytechnic.
+  </p>
+  <h4>1956</h4>
+  <img src="../images/pg1_timeline/our-story/1956-djwilliams.jpg" alt="..." class="d-block img-fluid">
+  <p>Mr D J Williams appointed first Principal</p>
+  <h4>1957</h4>
+  <p>Construction of campus at Prince Edward Road began with classes conducted in
+     borrowed premises in the meantime</p>
+  <h4>1958</h4>
+  <img src="../images/pg1_timeline/singapore-polytechnic3-1960s.jpg" alt="..." class="d-block w-100 img-fluid">
+  <p>Completion of Prince Edward Road campus with an enrolment of 2,800 students
+    registered for 58 courses to prepare them for external examinations.</p>
+  <h4>1959</h4>
+  <img src="../images/pg1_timeline/our-story/prince-philip.webp" alt="..." class="d-block w-50 img-fluid">
+  <p>Official opening of Singapore Polytechnic at Prince Edward Road by Prince Philip,
+     the Duke of Edinburgh on 24 February 1959.</p>
+  
+  <img src="../images/pg1_timeline/our-story/toh-chin-chye.webp" alt="..." class="d-block w-50 img-fluid">
+  <p>Dr Toh Chin Chye, Deputy Prime Minister, took over chairmanship of Board of Governors and oriented
+    Singapore Polytechnic towards meeting manpower needs of Singapore's industrialisation programme</p>
+  <img src="../images/pg1_timeline/our-story/CIC-Scollay.jpg" alt="..." class="d-block w-50 img-fluid">
+  <p>Mr C I C Scollay appointed Principal</p>
+</div>
+
+<div id="1960-1969" class="hidden">
+  <h4>1960</h4>
+  <img src="../images/SP-school-crest.png" alt="..." class="img-fluid w-50">
+  <p>The Singapore Polytechnic emblem was adopted.
+     The Malay phrase, Berkhidmat Dengan Keahlian means To Serve With
+    Skill. It is the Polytechnic's educational mission.
+  </p>
+  <h4>1961</h4>
+  <img src="../images/pg1_timeline/our-story/img_1961-jpg.jpg" alt="..." class="img-fluid w-50">
+  <p>
+    The first Graduation Ceremony on 26 August 1961 was held at Victoria Theatre.
+  </p>
+  <h4>1964</h4>
+  <p>
+    Dr C A Hart led Colombo Plan team to study development of advanced courses.
+    University of Singapore looked into feasibility of a faculty of technology and 
+    granting university degrees to Polytechnic graduates
+  </p>
+  <h4>1965</h4>
+  <p>Professional diploma courses gradually replaced by degree courses</p>
+  <h4>1967</h4>
+  <p>First batch of degree graduates produced</p>
+  <h4>1968</h4>
+  <p>Decision taken to transfer degree courses to University of Singapore,
+     giving rise to the Faculties of Architecture and Engineering.
+  </p>
+</div>
+
+<div id="1970-1989" class="hidden">
+  <h4>1970</h4>  
+  <p>Temporary additional campus site at Ayer Rajah Road acquired</p>
+  <p>Industrial and Business Orientation Programme launched by Dr Toh Chin Chye, Minister for Science and Technology</p>
+  <h4>1971</h4>
+  <img src="../images/pg1_timeline/our-story/img_1971a-jpg.jpg" alt="...">
+  <p>Nautical Studies, Civil Engineering and Building students housed in Princess Mary Barracks</p>
+  <p>Present campus site at Dover Road chosen as permanent home of the Polytechnic
+    By the end of 1971, Princess Mary Barracks at Dover Road was converted into Princess Mary Campus - SP's second campus.
+  </p>
+  <h4>1974</h4>
+  <img src="../images/pg1_timeline/our-story/img_1974-jpg.jpg" alt="...">
+  <p>Construction of Dover Road campus began</p>
+  <h4>1980</h4>
+  <p>Singapore Polytechnic (Amendment) Act passed in Parliament on 26 February,
+     reconstituting the Board of Governors and reorganising student bodies</p>
+  <p>
+    Mr Chua Chor Teck appointed Chairman of the Board of Governors
+  </p>
+
+  <h4>1982</h4>
+  <p>Five-year Expansion Plan (1982-86) approved, detailing new targets
+     for student enrolment and staffing, as well as new courses</p>
+  <p>
+      Industrial and Business Orientation Programme for students replaced by
+      Vacation Training Programme with support from Skills Development Fund
+  </p>
+
+</div>
+
+<div id="1990-1999" class="hidden">
+  <h4>1990</h4>
+  <img src="../images/pg1_timeline/our-story/img_1990a-jpg.jpg" alt="..." class="img-fluid">
+  <p>New $3.3 million Sports Complex completed</p>
+  <img src="../images/pg1_timeline/our-story/img_1990b-jpg.jpg" alt="..." class="img-fluid">
+  <p>50,000th graduate received his diploma at the 30th Graduation Ceremony</p>
+  <img src="../images/pg1_timeline/our-story/img_1990c-jpg.jpg" alt="Modal Image 1" class="d-block w-25 img-fluid">
+  <p>In line with government's effort to assist local companies, the Polytechnic took
+     on second mission of providing expertise and resources to these enterprises
+    Move made towards Swiss- German model of technical education
+  </p>
+  <h4>1991</h4>
+  <img src="../images/pg1_timeline/our-story/img_1991a-jpg.jpg" alt="..." class="img-fluid">
+  <p>Three term academic calendar changed to one with four terms</p>
+  <p>
+    Dual Training Scheme for workers to study part-time at the Polytechnic and
+    receive on-the-job training at their companies introduced
+  </p>
+  <h4>1994</h4>
+  <img src="../images/pg1_timeline/our-story/img_1994-jpg.jpg" alt="..." class="img-fluid">
+  <p>
+    SP became the first poly to introduce the Diploma in Optometry.
+  </p>
+</div>
+
+<div id="2000-2009" class="hidden">
+  <h4>2000</h4>
+  <img src="../images/pg1_timeline/our-story/img_2000a-jpg.jpg" alt="..." width="150">
+  <p>Singapore Maritime Academy was formed with the merger of the Polytechnic's Department of
+     Maritime Technology & Transportation and the Maritime & Port Authority of Singapore's
+     National Maritime Academy</p>
+  <p>100,000th graduate received his diploma at the 40th Graduation Ceremony</p>
+  <img src="../images/pg1_timeline/our-story/img_2000b-jpg.jpg" alt="..." width="150">
+  <p>
+    100,000th graduate received his diploma at the 40th Graduation Ceremony
+  </p>
+  <img src="../images/pg1_timeline/our-story/img_2000c-jpg.jpg" alt="..." width="150">
+  <p>
+    Electronics & Communication Engineering Department merged with
+    Electrical Engineering Department to form the Electrical & Electronic Engineering Department
+  </p>
+  <img src="../images/pg1_timeline/our-story/img_2000d-jpg.jpg" alt="..." width="150">
+  <p>
+    Mr Tan Kay Yong (left) appointed Chairman of Board of Governors
+  </p>
+  <p>
+    Principal lecturer, Mr Loh Peng Chum invented the world's first purple gold after
+    23 years of research. Purple gold is traditionally known to be porous and brittle,
+    but Mr Loh made it malleable enough to be fashioned into rings and pendants.
+    Not only has his formula been patented, an agreement has also been reached with
+    Aspial to market the product globally.
+  </p>
+  <h4>2001</h4>
+  <img src="../images/pg1_timeline/our-story/img_2001-jpg(1).jpg" alt="..." width="150">
+  <p>
+    Deputy Prime Minister and Minister for Defence Dr Tony Tan (extreme left)
+    officially opened the Singapore Polytechnic Graduates' Guild's new clubhouse
+  </p>
+  <h4>2002</h4>
+  <img src="../images/pg1_timeline/our-story/img_2002a-jpg.jpg" alt="..." width="150">
+  <p>
+    The Public Service Award for Organisational Excellence,
+    one of the most prestigious service wide awards, was presented to the Polytechnic
+  </p>
+  <h4>2003</h4>
+  <img src="../images/pg1_timeline/our-story/img_2003b-jpg.jpg" alt="..." width="150">
+  <p>New Convention Centre and Plaza project completed</p>
+  <p>
+    Re-branding of the Polytechnic initiated with a new Education Model of the Future,
+     and with programmes to unleash creativity, innovation and enterprise,
+     to create a unique SP experience for students and to make SP a great place to work.
+  </p>
+  <h4>2008</h4>
+  <img src="../images/pg1_timeline/our-story/timeline-moberly-jpg.jpg" alt="..." width="150">
+  <p>
+    A remnant of Singapore's colonial past - Moberly Block was a British army barrack before
+    it was converted to form part of the Dover Road campus. The block was refurbished and
+    transformed into a new hub for student activities. It was officially opened by 
+    HE Paul Madden, the British High Commissioner to Singapore, on 9 May 2008.
+  </p>
+</div>
+
+<div id="2010-Present" class="hidden">
+  <h4>2010</h4>
+  <img src="../images/pg1_timeline/our-story/timeline-launch-of-pace-jpg.jpg" alt="..." class="img-fluid">
+  <p>The Professional and Adult Continuing Education (PACE) Academy was
+     officially launched on 20 April by Mr Lee Yi Shyan, Minister of State for Manpower,
+     Trade and Industry.
+  </p>
+  <img src="../images/pg1_timeline/our-story/timeline-kenneth-chen-jpg.jpg" alt="..." class="img-fluid">
+  <p>
+      Kenneth Chen Yi Xin became SP's 150,000th graduate and received his
+      Diploma at the 50th Graduation Ceremony. He was also presented with a special memento
+      by Mr Lim Chin Aik, the first registered student of SP.
+  </p>
+  <img src="../images/pg1_timeline/our-story/timeline-desmond-thiam-jpg.jpg" alt="..." class="img-fluid">
+  <p>
+    Desmond Thiam became the first SP graduate to be admitted into the
+    Yong Loo Lin School of Medicine at the National University of Singapore.
+  </p>
+  <p>
+    SP receives the Public Service Milestone Award. Formerly it was known as the
+    Public Service Award for Organisational Excellence.
+  </p>
+  <p>
+    SP won the President's Award for the Environment - the highest accolade to
+    recognise organisations and companies for their green efforts.
+  </p>
+  <p>
+    SP organised RoboCup 2010, a world-class event dubbed the Olympics
+    of the Robotics world. It was the first time the event was held in Singapore.
+  </p>
+  <h4>2013</h4>
+  <p>SP was awarded the Public Service Milestone Award at this year's Excellence in Public Service Awards.</p>
+  <h4>2015</h4>
+  <p>SP reaches a key milestone with graduation of close to 5,900 students.</p>
+  <h4>2016</h4>
+  <img src="../images/pg1_timeline/our-story/pceosoh-jpg.jpg" alt="..." class="img-fluid">
+  <p>Mr Soh Wai Wah took over as the new Principal and CEO in October 2016.</p>
+  <h4>2018</h4>
+  <p>SP achieved our 200,000th graduate milestone!</p>
+  <h4>2020</h4>
+  <img src="../images/pg1_timeline/our-story/janet-ang-sp-timeline.jpg" alt="..." class="img-fluid">
+  <p>Ms Janet Ang appointed as the new chairman on 16 September 2020.</p>
+  <h4>2024</h4>
+  <p>SP celebrates its 70th anniversary!</p>
+</div>
+<!-- Dynamic Modal (for Our Story) -->
+<div class="modal fade" id="dynamicModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="updateModalTitle">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="dynamicModalBody">
+        Modal content goes here.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--jumba mascot button-->
+<a onclick="topFunction()" href="#" class="floating-button" role="button">
+  <img src="../images/testing.png" alt="..." width="150">
+</a>
+
+<!--page footer-->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center border-top"> 
+    <div class="container-fluid bg-dark">
+      <div class="row mt-3 justify-content-center fst-italic fw-lighter text-white">
+        Want to stay updated on our latest happenings? Follow us on our socials.
+      </div>
+      <ul class="nav justify-content-center align-items-center list-unstyled d-flex my-3">
+
+        <li class="ms-2">
+          <a href="https://www.facebook.com/singaporepolytechnic" target="_blank" class="text-danger">
+            <i class="bi bi-facebook"></i>
+          </a>        
+        </li>
+        <li class="ms-2">
+          <a href="https://www.instagram.com/singaporepoly/"  target="_blank" class="text-danger">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </li>
+        <li class="ms-2">
+          <a href="https://www.youtube.com/@singaporepolytechnic" target="_blank" class="text-danger">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </li>
+        <li class="ms-2">
+          <a href="https://t.me/SingaporePoly"  target="_blank" class="text-danger">
+            <i class="bi bi-telegram"></i>
+          </a>
+        </li>
+        <li class="ms-2">
+          <a href="https://www.tiktok.com/@singaporepoly"  target="_blank" class="text-danger">
+            <i class="bi bi-tiktok"></i>
+          </a>
+        </li>
+       </ul>
+      
+      <div class="row">
+        
+        <div class="col-auto">
+          <a href="https://www.sp.edu.sg/sp70" target="_blank">
+            <img src="../images/SP-school-crest.png" alt="..." class=" ms-3 mb-5" width="150">            
+          </a> 
+        </div>
+        <div class="col-auto text-white">
+          <h6>Singapore Polytechnic</h6>
+          <p class="fs-6">Established 1954<br>
+            500 Dover Road, Singapore 139651
+          </p>
+        </div>
+        <div class="col">
+          <ul>
+            <li>
+              <a href="index.html" class="text-light">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="achievements.html" class="text-light">
+                Achievements
+              </a>
+            </li>
+            <li>
+              <a href="wishes.html" class="text-light">
+                Well Wishes
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+             
+      
+    </div>
+  </footer>
+
+</body>
+</html>
