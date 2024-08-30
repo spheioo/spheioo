@@ -1,0 +1,15 @@
+/*Student Success stories*/
+.success-bgnd{
+    background-color: #e9c5c5;
+}
+
+.card{
+  height: 670px;
+}
+.btn{  
+  background-color: #e8adad;
+}
+.btn:hover{
+  background-color: #e58787;
+}
+

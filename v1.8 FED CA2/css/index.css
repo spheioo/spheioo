@@ -1,0 +1,42 @@
+/*page top carousel styles*/
+.carousel-item img {
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    height: 500px;
+    width: 100%;
+}
+/*SP70 Commemorative Events card styles*/
+.img-zoom {
+    transition: transform 0.3s ease;
+}
+.img-zoom:hover {
+    transform: scale(1.2);
+}
+.card-img-top {   
+    height: 10rem; /* fixes image height to be the same */
+    object-fit: cover; /*makes image scale to fill the image section nicely */
+}
+/* Read more read less styles */
+.hidden {
+    display: none;
+}
+/*Our History styles */
+.table td, .table th {padding: 0px;}
+.tableImg {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.abc {
+    height: 250px;
+    object-fit: cover;
+}
+.image-container:hover .timeline-button {
+background-color: #ff0008;
+color:white;
+}
+.timeline-button {
+    background-color: white;
+    color:black;
+    transition: background-color 0.3s ease;
+}
+
